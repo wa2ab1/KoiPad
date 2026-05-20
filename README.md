@@ -1,5 +1,6 @@
 # Info
-
+https://a360.co/41LIHIl
+Fusion 360 3D case model file
 
 # BOM:
 Seeed XIAO RP2040 x1
