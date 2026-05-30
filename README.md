@@ -1,4 +1,4 @@
-# KoiPad: Perfect Numpad Companion with Rotary Encoder
+# KoiPad: External Numpad Companion with Rotary Encoder
 
 KoiPad is your perfect companion to a numpad-less keyboard setup. With its large 4 cm rotary encoder shaped like its eyeball and a fishing line made of USB-C cable, you'll never have to work alone at your desk ever again! Use the numpad to crunch in numbers for projects and calculations!
 
