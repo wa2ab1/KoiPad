@@ -969,7 +969,7 @@
 			)
 		)
 		(property "Value" "MCU_Seeed_XIAO_RP2040"
-			(at 10.16 0 90)
+			(at 10.745 0.05 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "03d38004-d31f-40c4-bab0-5dbeb336042e")
@@ -2094,7 +2094,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder"
-			(at 7.5 10.4 0)
+			(at 2.995 11.3 0)
 			(layer "F.Fab")
 			(uuid "fdc2bc9f-c485-40d3-a53a-4ecc29045ad1")
 			(effects
@@ -2398,7 +2398,7 @@
 			(uuid "eaa1d234-7544-41ff-84c3-03dab4262f6e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 11.1 6.3 0)
+			(at 3.795 -1.25 0)
 			(layer "F.Fab")
 			(uuid "79e3c2b0-c187-4369-a3e2-5ebff8bf8eaf")
 			(effects
