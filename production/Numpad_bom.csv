@@ -1,8 +1,0 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-"D1, D10, D11, D12, D13, D14, D15, D16, D17, D2, D3, D4, D5, D6, D7, D8, D9",Diode_DO-35,17,~,
-"S1, S2, S3, S4, S5, S6, S7",SW_Cherry_MX_1.00u_PCB,7,~,
-"S10, S11, S12, S13, S14, S17, S9",SW_Cherry_MX_1.00u_Plate,7,~,
-"S15, S8",SW_Cherry_MX_2.00u_Vertical_Plate,2,~,
-S16,SW_Cherry_MX_2.00u_Plate,1,~,
-SW2,RotaryEncoder_Alps_EC11E_Vertical_H20mm,1,RotaryEncoder,
-U1,Seeed_XIAO_RP2040,1,MCU_Seeed_XIAO_RP2040,
