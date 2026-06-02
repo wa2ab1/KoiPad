@@ -14,10 +14,19 @@ Fusion 360 3D case model file
 - Seeduino Xiao RP2040
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
-  
+- 
+## Case
+
+The case should be 3d printed from PLA using a standard 0.3 mm nozzle, I use 10% gyroid infill. The top plate and bottom case are printed separately in red and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
+
+<img width="1552" height="991" alt="image" src="https://github.com/user-attachments/assets/cd65d2b5-2035-41d1-bdf9-c432ed77e870" />
+
+
+The top plate is printed in one color only (red), with the outlines raised for easy painting. First paint the yellow and beige areas, then go over the black outlines for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
+
 ## PCB
 
-The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers for the larger keys. The pcb is suspended on 5 4mm standoffs of M2 size which screw in through the countersinks on the bottom of the case and the top of the pcb. 
+The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers for the larger keys. The pcb is suspended on 4mm standoffs of M2 size which screw in through the countersinks on the bottom of the case and the top of the pcb. Screw these in before screwing on the top plate which should stay permanently closed to avoid stripping the screw.
 
 <img width="500" height="862" alt="Screenshot 2026-05-28 011109" src="https://github.com/user-attachments/assets/4e64b532-c3f5-40b8-8ca6-b40e3e70ea48" />
 
@@ -28,13 +37,10 @@ The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers f
 
 <img width="732" height="461" alt="Screenshot 2026-05-28 011202" src="https://github.com/user-attachments/assets/634f3a05-77e9-48e8-bd05-be496041839f" />
 
-## Case
+## Code
+The seeduino should be loaded with the attached code using a software program like Arduino IDE.
 
-The case should be 3d printed from PLA using a standard 0.4 mm nozzle. The top plate and bottom case are printed separately and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. 
 
-The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
-
-The top plate is printed in one color only (red), with the outlines raised for easy painting. First paint the yellow and beige areas, then go over the black outlines for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.
-
+## BOM
 
 
