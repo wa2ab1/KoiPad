@@ -2,7 +2,7 @@
 
 KoiPad is your perfect external numpad companion to a numpad-less keyboard setup. With its large 4 cm rotary encoder shaped like its eyeball and a fishing line made of USB-C cable, you'll never have to work alone at your desk ever again! Use the numpad to crunch in numbers for projects and calculations!
 
-<img width="2160" height="1082" alt="koipad render" src="https://github.com/user-attachments/assets/8212a4cb-99c9-42f4-ae5c-d7a660a71206" />
+<img width="1496" height="1082" alt="Numpad" src="https://github.com/user-attachments/assets/bdf5354d-26ef-4ee9-bae1-92bcd929a596" />
 
 https://a360.co/41LIHIl
 Fusion 360 3D case model file
@@ -14,15 +14,18 @@ Fusion 360 3D case model file
 - Seeduino Xiao RP2040
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
-- 
+  
 ## Case
 
-The case should be 3d printed from PLA using a standard 0.3 mm nozzle, I use 10% gyroid infill. The top plate and bottom case are printed separately in red and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
-
-<img width="1552" height="991" alt="image" src="https://github.com/user-attachments/assets/cd65d2b5-2035-41d1-bdf9-c432ed77e870" />
+The case should be 3d printed from PLA using a standard 0.3 mm nozzle. I use 10% gyroid infill. The top plate and bottom case are printed separately in red and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
 
 
-The top plate is printed in one color only (red), with the outlines raised for easy painting. First paint the yellow and beige areas, then go over the black outlines for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
+<img width="1546" height="958" alt="image" src="https://github.com/user-attachments/assets/7bac565d-0e0a-4d3c-a7bb-4563f757e6ec" />
+
+
+The top plate is printed in one color only (red), with the outlines raised for easy brush or spray painting. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
+
+<img width="1514" height="777" alt="image" src="https://github.com/user-attachments/assets/ac82af13-850f-4225-85b0-2abcc08542d0" />
 
 ## PCB
 
@@ -37,10 +40,5 @@ The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers f
 
 <img width="732" height="461" alt="Screenshot 2026-05-28 011202" src="https://github.com/user-attachments/assets/634f3a05-77e9-48e8-bd05-be496041839f" />
 
-## Code
-The seeduino should be loaded with the attached code using a software program like Arduino IDE.
-
-
-## BOM
-
-
+## Firmware
+The seeduino should be loaded with the attached code using a software program like Arduino IDE, using the Seeed XIAO RP2040 board.
