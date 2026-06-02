@@ -9,8 +9,8 @@ Fusion 360 3D case model file
 
 ## Features:
 
-- 17-key numpad layout
-- EC-11 rotary encoder
+- 17-key standard numpad layout and num lock
+- EC-11 rotary encoder for volume adjustment
 - Seeduino Xiao RP2040
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
