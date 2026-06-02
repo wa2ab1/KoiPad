@@ -2,7 +2,7 @@
 
 KoiPad is your perfect external numpad companion to a numpad-less keyboard setup. With its large 4 cm rotary encoder shaped like its eyeball and a fishing line made of USB-C cable, you'll never have to work alone at your desk ever again! Use the numpad to crunch in numbers for projects and calculations!
 
-<img width="2160" height="1082" alt="koipad render" src="https://github.com/user-attachments/assets/8212a4cb-99c9-42f4-ae5c-d7a660a71206" />
+<img width="1496" height="1082" alt="Numpad" src="https://github.com/user-attachments/assets/bdf5354d-26ef-4ee9-bae1-92bcd929a596" />
 
 https://a360.co/41LIHIl
 Fusion 360 3D case model file
