@@ -7,6 +7,7 @@ KoiPad is your perfect external numpad companion to a numpad-less keyboard setup
 https://a360.co/41LIHIl
 Fusion 360 3D case model file
 
+
 ## Features:
 
 - 17-key standard numpad layout and num lock
@@ -14,7 +15,9 @@ Fusion 360 3D case model file
 - Seeduino Xiao RP2040
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
-  
+
+<img width="1410" height="2000" alt="koipad zine" src="https://github.com/user-attachments/assets/39710ccf-bbb4-42e4-abb1-af0cbbc3a48a" />
+
 ## Case
 
 The case should be 3d printed from PLA using a standard 0.3 mm nozzle. I use 10% gyroid infill. The top plate and bottom case are printed separately in red and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
