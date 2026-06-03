@@ -34,14 +34,17 @@ The top plate is printed in one color only (red), with the outlines raised for e
 
 The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers for the larger keys. The pcb is suspended on 4mm standoffs of M2 size which screw in through the countersinks on the bottom of the case and the top of the pcb. Screw these in before screwing on the top plate which should stay permanently closed to avoid stripping the screw.
 
-<img width="500" height="862" alt="Screenshot 2026-05-28 011109" src="https://github.com/user-attachments/assets/4e64b532-c3f5-40b8-8ca6-b40e3e70ea48" />
+<p float="left">
+  <img width="500" height="862" alt="Screenshot 2026-05-28 011109" src="https://github.com/user-attachments/assets/4e64b532-c3f5-40b8-8ca6-b40e3e70ea48" />
+  <img width="520" height="1016" alt="image" src="https://github.com/user-attachments/assets/d9ef42e6-e7d0-4063-8d78-f52a8d0c0a03"  />
+  <img width="692" height="1195" alt="image" src="https://github.com/user-attachments/assets/a23d0284-706b-44ae-819e-3ff8287791ef" />
+</p>
 
-<img width="692" height="1195" alt="image" src="https://github.com/user-attachments/assets/a23d0284-706b-44ae-819e-3ff8287791ef" />
 
 
 ## Schematic
 
-<img width="732" height="461" alt="Screenshot 2026-05-28 011202" src="https://github.com/user-attachments/assets/634f3a05-77e9-48e8-bd05-be496041839f" />
+<img width="1671" height="981" alt="image" src="https://github.com/user-attachments/assets/0f3dc1c9-72ef-4d11-a9e1-02e66cbeecf0" />
 
 ## Firmware
 The seeduino should be loaded with the attached code using a software program like Arduino IDE, using the Seeed XIAO RP2040 board.
