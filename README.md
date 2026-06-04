@@ -26,7 +26,7 @@ The case should be 3d printed from PLA using a standard 0.3 mm nozzle. I use 10%
 <img width="1546" height="958" alt="image" src="https://github.com/user-attachments/assets/7bac565d-0e0a-4d3c-a7bb-4563f757e6ec" />
 
 
-The top plate is printed in one color only (red), with the outlines raised for easy brush or spray painting. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
+The top plate is printed in one color only (red), with the outlines raised for easy brush or spray painting. You'll need 3 colors (yellow, white, black) and red (optional) and you'll need to mix yellow with white to create the beige and mix red with some white for the perfect color. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
 
 <img width="1514" height="777" alt="image" src="https://github.com/user-attachments/assets/ac82af13-850f-4225-85b0-2abcc08542d0" />
 
