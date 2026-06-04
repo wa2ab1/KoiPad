@@ -16,7 +16,7 @@ Fusion 360 3D case model file
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
 
-<img width="1410" height="2000" alt="koipad zine" src="https://github.com/user-attachments/assets/39710ccf-bbb4-42e4-abb1-af0cbbc3a48a" />
+<img width="1410" height="2000" alt="KoiPad Zine (1)" src="https://github.com/user-attachments/assets/e02ab231-63ca-4341-8861-67e1be896216" />
 
 ## Case
 
