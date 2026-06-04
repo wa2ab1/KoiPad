@@ -3313,6 +3313,7 @@
 			)
 		)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/MX_1.00u_CAD.step"
+			(hide yes)
 			(offset
 				(xyz -2.5 -5 17)
 			)
