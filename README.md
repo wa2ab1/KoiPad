@@ -22,6 +22,7 @@ With its large 4 cm rotary encoder shaped like its eyeball and a USB-C cable inp
 
 <img width="1546" height="958" alt="image" src="https://github.com/user-attachments/assets/7bac565d-0e0a-4d3c-a7bb-4563f757e6ec" />
 
+### Painting:
 
 The top plate is printed in one color only (red), with the outlines raised for easy brush painting. You'll need 3 colors (yellow, white, black) and red (optional). You can mix the paints for beige and red. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look. 
 
@@ -38,10 +39,17 @@ The KoiPad utilizes standard keyboard switches with 2u PCB mounted stabilizers f
 </p>
 
 
-
 ## Schematic
 
 <img width="1671" height="981" alt="image" src="https://github.com/user-attachments/assets/0f3dc1c9-72ef-4d11-a9e1-02e66cbeecf0" />
 
 ## Firmware
-Load the firmare onto the Seeduino XIAO RP2040 using Arduino IDE and the corresponding board package.
+The rotary encoder is configured to control system volume up/down, and the keypad includes Enter and Num Lock mappings. You may need to adjust these key codes if your environment handles these special keys differently.
+
+### Libraries used: 
+- Keypad
+- Keyboard (support for Seed XIAO RP2040 Arduino core)
+
+### Instructions:
+- Find the board manager and look for "Seed SAMD Boards"
+- Select XIAO RP2040 and upload the koipad.ino file.
