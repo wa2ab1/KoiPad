@@ -1,39 +1,35 @@
 # KoiPad: External Numpad Companion with Rotary Encoder
 
-KoiPad is your perfect external numpad companion to a numpad-less keyboard setup. With its large 4 cm rotary encoder shaped like its eyeball and a fishing line made of USB-C cable, you'll never have to work alone at your desk ever again! Use the numpad to crunch in numbers for projects and calculations!
+KoiPad is an external numpad companion with a large rotary encoder, designed for a fun desk setup with fast numeric input.
 
 <img width="1496" height="1082" alt="Numpad" src="https://github.com/user-attachments/assets/bdf5354d-26ef-4ee9-bae1-92bcd929a596" />
 
-https://a360.co/41LIHIl
-Fusion 360 3D case model file
-
+With its large 4 cm rotary encoder shaped like its eyeball and a USB-C cable inpsired by a fishing line, KoiPad adds a playful companion to your desk.
 
 ## Features:
 
 - 17-key standard numpad layout and num lock
 - EC-11 rotary encoder for volume adjustment
-- Seeduino Xiao RP2040
+- Seeeduino XIAO RP2040
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
 
 <img width="1410" height="2000" alt="KoiPad Zine (2)" src="https://github.com/user-attachments/assets/96cf9644-28c7-4cc8-b16b-be12a3121514" />
 
-
 ## Case
 
-The case should be 3d printed from PLA using a standard 0.3 mm nozzle. I use 10% gyroid infill. The top plate and bottom case are printed separately in red and secured together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case. The knob is also printed separately and should be printed upside down wth the top part on the printing surface.
-
+3D print the top plate and bottom case separately, and secure them together using 5 mm M2 screws on the corners. The screws will need to be manually threaded into the bottom case.
 
 <img width="1546" height="958" alt="image" src="https://github.com/user-attachments/assets/7bac565d-0e0a-4d3c-a7bb-4563f757e6ec" />
 
 
-The top plate is printed in one color only (red), with the outlines raised for easy brush or spray painting. You'll need 3 colors (yellow, white, black) and red (optional) and you'll need to mix yellow with white to create the beige and mix red with some white for the perfect color. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look.  
+The top plate is printed in one color only (red), with the outlines raised for easy brush painting. You'll need 3 colors (yellow, white, black) and red (optional). You can mix the paints for beige and red. First paint the yellow and beige areas, then go over the black outlines and white eye area for a clean finish. You may want to use masking tape to protect the sides of the outlines for a cleaner look. 
 
 <img width="1514" height="777" alt="image" src="https://github.com/user-attachments/assets/ac82af13-850f-4225-85b0-2abcc08542d0" />
 
 ## PCB
 
-The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers for the larger keys. The pcb is suspended on 4mm standoffs of M2 size which screw in through the countersinks on the bottom of the case and the top of the pcb. Screw these in before screwing on the top plate which should stay permanently closed to avoid stripping the screw.
+The KoiPad utilizes standard keyboard switches with 2u PCB mounted stabilizers for the larger keys. After soldering your diodes and switches and snapping on the stabilizers, screw the pcb with 4mm standoffs of M2 size through the countersinks on the bottom of the case and the designated holes on the pcb. Screw these in before screwing on the top plate, and avoid rescrewing the top plate unless necessary to prevent stripping.
 
 <p float="left">
   <img width="500" height="862" alt="Screenshot 2026-05-28 011109" src="https://github.com/user-attachments/assets/4e64b532-c3f5-40b8-8ca6-b40e3e70ea48" />
@@ -48,4 +44,4 @@ The koipad utilizes standard keyboard switches with 2u PCB mounted stabilizers f
 <img width="1671" height="981" alt="image" src="https://github.com/user-attachments/assets/0f3dc1c9-72ef-4d11-a9e1-02e66cbeecf0" />
 
 ## Firmware
-The seeduino should be loaded with the attached code using a software program like Arduino IDE, using the Seeed XIAO RP2040 board.
+Load the firmare onto the Seeduino XIAO RP2040 using Arduino IDE and the corresponding board package.
