@@ -57,9 +57,9 @@ The rotary encoder is configured to control system volume up/down, and the keypa
 ## Credits
 3D placeholder/reference models used in renders were sourced from othercreators. Final hardware uses real components.
 
-Keycap, switches, stabilizers, standoffs, encoder, and Seeeduino XIAO footprints and 3d models from [ScottoKeebs]([url](https://github.com/joe-scotto/scottokeebs))
+Keycap, switches, stabilizers, standoffs, encoder, and Seeeduino XIAO footprints and 3d models from [ScottoKeebs](https://github.com/joe-scotto/scottokeebs)
 
-[Screws]([url](https://grabcad.com/library/metric-screws-from-m2-x-2-5-to-m2-x-20-1))
+[Screws](https://grabcad.com/library/metric-screws-from-m2-x-2-5-to-m2-x-20-1)
 
-[USB-C cable]([url](https://grabcad.com/library/usb-usb-cable-1))
+[USB-C cable](https://grabcad.com/library/usb-usb-cable-1)
 
