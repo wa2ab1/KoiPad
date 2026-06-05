@@ -6,7 +6,7 @@ KoiPad is an external numpad companion with a large rotary encoder, designed for
 
 With its large 4 cm rotary encoder shaped like its eyeball and a USB-C cable inpsired by a fishing line, KoiPad adds a playful companion to your desk.
 
-KoiPad was inspired by the koi shape from Hack Club's Fallout, and I wanted to turn that into something more unique than a typical macropad. When brainstorming case ideas, the ideas for the usb-c cable to be the fishing line at its mouth and the giant knob made the whole case concept click into place. With my current keyboard being a TKL layout, I also wanted a dedicated numpad which will help improve my number crunching.
+KoiPad was inspired by the koi shape from Hack Club's Fallout, and I wanted to turn that into something more unique than a typical macropad. When brainstorming case ideas, the ideas for the usb-c cable to be the fishing line at its mouth and the giant knob for its eye made the whole case concept click into place. With my current keyboard being a TKL layout, I also wanted a dedicated numpad which will help improve my number crunching.
 
 ## Features:
 
