@@ -1,5 +1,5 @@
 Item,Description,Quantity,Per-Part Unit Price,Actual Item Price,URL,Actual Total Cost (13% Tax),Theoretical Lowest Cost (with tax)
-Keyboard Switches 20 Pack,Generic keyboard switches,17,0.268,5.36,https://www.aliexpress.com/item/1005011838889689.html,135.1932,125.21304
+Keyboard Switches 20 Pack,Generic keyboard switches,17,0.268,5.36,https://www.aliexpress.com/item/1005011838889689.html,125.3961,115.41594
 M2 Screws 3 mm,Generic M2 screws,5,0.0484,2.47,https://www.aliexpress.com/item/1005002364568213.html,,
 M2 Tapping Screws 5 mm,Must be self tapping screws,4,0.645,2.58,https://www.aliexpress.com/item/1005009140378459.html ,,
 Keycap set,Only need 17 key numpad keys,1,10.47,10.47,https://www.aliexpress.com/item/1005009153807344.html,,
@@ -11,4 +11,4 @@ SEEED XIAO rp2040,microcontroller,1,16.75,16.75,https://www.aliexpress.com/item/
 3d Printed Case,0.15 cents per g of filament,1,16.58,16.58,,,
 3d Printed Top plate,0.15 cents per g of filament,1,6.24,6.24,,,
 3d printed knob,0.15 cents per g of filament,1,0.94,0.94,,,
-PCB,"JLC PCB order ($9.60 for board, $19 shipping with coupon)",1,34.6,34.6,,,
+PCB,"JLC PCB order ($9.60 for board, $19 shipping with coupon)",1,25.93,25.93,,,
