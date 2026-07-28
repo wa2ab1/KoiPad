@@ -3,6 +3,7 @@
 KoiPad is an external numpad companion with a large rotary encoder, designed for a fun desk setup with fast numeric input.
 
 <img width="1496" height="1082" alt="Numpad" src="https://github.com/user-attachments/assets/bdf5354d-26ef-4ee9-bae1-92bcd929a596" />
+<img width="4280" height="2642" alt="image" src="https://github.com/user-attachments/assets/f17bb155-bc6f-4d5e-8155-00e8ec95d029" />
 
 With its large 4 cm rotary encoder shaped like its eyeball and a USB-C cable inpsired by a fishing line, KoiPad adds a playful companion to your desk.
 
