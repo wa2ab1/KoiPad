@@ -1,38 +1,51 @@
 #include <Keypad.h>
-#include <Keyboard.h>
+#include <Adafruit_TinyUSB.h>
+// Initialize the USB Consumer (Media) HID interface
+Adafruit_USBD_HID usb_hid;
 
-// ---------- Keypad ----------
-const byte ROWS = 5;
-const byte COLS = 4;
-
-char keys[ROWS][COLS] = {
-  {'X', '/', '*', '-'},
-  {'7', '8', '9', '+'},
-  {'4', '5', '6', ' '},
-  {'1', '2', '3', 'E'},
-  {'0', ',', ' ', ' '}
+enum {
+  RID_KEYBOARD = 1,
+  RID_CONSUMER_CONTROL
 };
 
-byte rowPins[ROWS]    = {5, 6, 7, 10, 11};
-byte columnPins[COLS] = {4, 3, 2, 1};
+uint8_t const desc_hid_report[] = {
+  TUD_HID_REPORT_DESC_KEYBOARD( HID_REPORT_ID(RID_KEYBOARD) ),
+  TUD_HID_REPORT_DESC_CONSUMER( HID_REPORT_ID(RID_CONSUMER_CONTROL) )
+};
+
+static hid_keyboard_report_t pressed_keys = { 0 };
+
+// ---------- Keypad ----------
+const byte ROWS = 4;
+const byte COLS = 5;
+
+uint8_t keys[ROWS][COLS] = {
+  { HID_KEY_NUM_LOCK, HID_KEY_KEYPAD_7, HID_KEY_KEYPAD_4, HID_KEY_KEYPAD_1, HID_KEY_KEYPAD_0 },
+  { HID_KEY_KEYPAD_DIVIDE, HID_KEY_KEYPAD_8, HID_KEY_KEYPAD_5, HID_KEY_KEYPAD_2, ' ' },
+  { HID_KEY_KEYPAD_MULTIPLY, HID_KEY_KEYPAD_9, HID_KEY_KEYPAD_6, HID_KEY_KEYPAD_3, HID_KEY_KEYPAD_DECIMAL },
+  { HID_KEY_KEYPAD_SUBTRACT, HID_KEY_KEYPAD_ADD, ' ', HID_KEY_KEYPAD_ENTER, ' ' },
+};
+
+byte columnPins[COLS] = { D4, D5, D6, D9, D10 };
+byte rowPins[ROWS] = { D3, D2, D1, D0 };
 
 Keypad customKeypad = Keypad(
   makeKeymap(keys),
   rowPins,
   columnPins,
   ROWS,
-  COLS
-);
+  COLS);
 
 // ---------- Rotary encoder ----------
-const int encoderPinA = 9;   // R0 -> A
-const int encoderPinB = 8;   // R1 -> B
+const int encoderPinA = D8; 
+const int encoderPinB = D7;  
 
 int lastA = 0;
 int lastB = 0;
 
 void setup() {
-  Keyboard.begin();
+
+  Serial.begin(9600);
 
   // Encoder inputs with pull-ups
   pinMode(encoderPinA, INPUT_PULLUP);
@@ -40,22 +53,50 @@ void setup() {
 
   lastA = digitalRead(encoderPinA);
   lastB = digitalRead(encoderPinB);
+
+  usb_hid.setPollInterval(2);
+  usb_hid.setReportDescriptor(desc_hid_report, sizeof(desc_hid_report));
+  usb_hid.begin();
 }
 
 void loop() {
-  // ----- Keypad handling -----
-  char customKey = customKeypad.getKey();
 
-  if (customKey) {
-    if (customKey == 'E') {
-      Keyboard.write(KEY_RETURN);
-    } 
-    else if (customKey == 'X')
-    {
-      Keyboard.write(KEY_NUM_LOCK);
-    }
-    else if (customKey != ' ') {
-      Keyboard.write(customKey);
+  if (customKeypad.getKeys()) {
+    Serial.println("pressed");
+    for (int i = 0; i < 10; i++) {
+      if (customKeypad.key[i].stateChanged) 
+      {
+        if (customKeypad.key[i].kstate == PRESSED) 
+        {
+          
+          uint8_t targetKey = customKeypad.key[i].kchar;
+
+          for (int i = 0; i < 6; i++) 
+          {
+            if (pressed_keys.keycode[i] == 0) { // Find an empty slot
+              pressed_keys.keycode[i] = targetKey; // Add the key
+              Serial.println(targetKey);
+              break;
+            }
+          }
+          usb_hid.sendReport(RID_KEYBOARD, &pressed_keys, sizeof(pressed_keys));
+        }         
+        else if (customKeypad.key[i].kstate == RELEASED) 
+        {
+          uint8_t targetKey = customKeypad.key[i].kchar;
+
+          for (int i = 0; i < 6; i++) 
+          {
+            if (pressed_keys.keycode[i] == targetKey) 
+            {
+              pressed_keys.keycode[i] = 0; // Clear ONLY this key slot
+              break;
+            }
+          }
+          usb_hid.sendReport(RID_KEYBOARD, &pressed_keys, sizeof(pressed_keys));
+
+        }
+      }
     }
   }
 
@@ -67,13 +108,17 @@ void loop() {
   if (a != lastA) {
     if (a == b) {
       // One direction: send e.g. Arrow Up
-      Keyboard.write(KEY_MEDIA_VOLUME_UP);
+      uint16_t keycode = HID_USAGE_CONSUMER_VOLUME_INCREMENT;
+      usb_hid.sendReport16(RID_CONSUMER_CONTROL, keycode);
+      usb_hid.sendReport16(RID_CONSUMER_CONTROL, 0); 
+
     } else {
       // Other direction: send e.g. Arrow Down
-      Keyboard.write(KEY_MEDIA_VOLUME_DOWN);
+      uint16_t keycode = HID_USAGE_CONSUMER_VOLUME_DECREMENT;
+      usb_hid.sendReport16(RID_CONSUMER_CONTROL, keycode);
+      usb_hid.sendReport16(RID_CONSUMER_CONTROL, 0); 
     }
   }
-
   lastA = a;
   lastB = b;
 }
