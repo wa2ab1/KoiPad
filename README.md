@@ -54,8 +54,10 @@ The rotary encoder is configured to control system volume up/down, and the keypa
 - Keyboard (support for Seed XIAO RP2040 Arduino core)
 
 ### Instructions:
-- Find the board manager and look for "Seed SAMD Boards"
-- Select XIAO RP2040 and upload the koipad.ino file.
+- Find the board manager and look for "Seed SAMD Boards" or "Raspberry Pi Pico/RP2040/RP2350"
+- Select XIAO RP2040 board in your COM ports
+- Go to Tools -> USB Stack -> select "Adafruit TinyUSB"
+- upload the koipad.ino file (hold the B/boot button on the xiao and plug it in, then click upload)
 
 ## Credits
 3D placeholder/reference models used in renders were sourced from other creators. Final hardware uses real components.
