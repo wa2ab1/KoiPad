@@ -17,7 +17,7 @@ KoiPad was inspired by the koi shape from Hack Club's Fallout, and I wanted to t
 - Standard MX switches with 2u PCB-mount stabilizers
 - USB-C connection
 
-<img width="1410" height="2000" alt="KoiPad Zine (2)" src="https://github.com/user-attachments/assets/96cf9644-28c7-4cc8-b16b-be12a3121514" />
+<img width="1410" height="2000" alt="Zine" src="https://github.com/user-attachments/assets/613ca3af-4297-47a7-b964-f4f4671e5019" />
 
 ## Case
 
