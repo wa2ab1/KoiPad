@@ -51,7 +51,7 @@ The rotary encoder is configured to control system volume up/down, and the keypa
 
 ### Libraries used: 
 - Keypad
-- Keyboard (support for Seed XIAO RP2040 Arduino core)
+- Adafruit_TinyUSB
 
 ### Instructions:
 - Find the board manager and look for "Seed SAMD Boards" or "Raspberry Pi Pico/RP2040/RP2350"
